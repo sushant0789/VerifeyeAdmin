@@ -23,6 +23,7 @@ body {
   margin-bottom: 1.4rem;
   box-shadow: 0 0px 5.76px 0.24px rgba(36, 36, 36, 0.1);
   background-color: #fff;
+  position: relative;
 
   &.right {
     padding: 1rem;
@@ -61,7 +62,7 @@ body {
 
 .select-box {
   position: relative;
-  margin: 0 0 25px;
+  margin: 8px 0 0;
 }
 
 .select-box select {
@@ -71,8 +72,8 @@ body {
   width: 100%;
   border: none;
   font-size: 1rem;
-  -webkit-appearance: button;
-  appearance: button;
+  -webkit-appearance: none;
+  appearance: none;
   outline: none;
   cursor: pointer;
   border-radius: .25rem;
@@ -196,11 +197,6 @@ p.lead {
     color: #dc3545;
   }
 
-  i {
-    font-size: 3rem;
-    display: block;
-    margin: 10px 0 0;
-  }
 }
 
 .flex-img {
@@ -213,6 +209,41 @@ p.lead {
   margin-bottom: 25px;
 }
 
+i.fa-check-circle,
+i.fa-times-circle {
+  font-size: 3rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  &.success {
+    color: #28a745;
+  }
+
+  &.reject {
+    color: #dc3545;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .flex-img {
+    height: auto;
+  }
+
+  .name-h5 {
+    margin: 20px 0;
+  }
+
+  .name-h2 {
+    font-size: 1.6rem;
+  }
+
+  i.fa-check-circle.reject,
+  i.fa-times-circle.reject {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width:767px) {
   .flex-img {
     height: auto;
@@ -222,11 +253,24 @@ p.lead {
     margin: 20px 0 10px;
   }
 
+  .name-h4 {
+    width: 90%;
+  }
+
+  .name-h2 {
+    font-size: 1.6rem;
+  }
+
   .data-ul li span {
     width: 55%;
 
     &:first-child {
       width: 40%;
     }
+  }
+
+  i.fa-check-circle.reject,
+  i.fa-times-circle.reject {
+    font-size: 1.5rem;
   }
 }

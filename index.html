@@ -73,11 +73,25 @@
         </div>
         <div class="col-lg-9 col-sm-8">
           <div class="box-shadow">
-            <h4 class="name-h4">Christopher Lee Gray</h4>
-            <h6 class="date-h6">
-              <span class="date">07 Apr, 2020</span>
-              <span class="time">16:44</span>
-            </h6>
+            <div class="row">
+              <div class="col-lg-8">
+                <h4 class="name-h4">Christopher Lee Gray</h4>
+                <h6 class="date-h6">
+                  <span class="date">07 Apr, 2020</span>
+                  <span class="time">16:44</span>
+                </h6>
+              </div>
+              <div class="col-lg-4">
+                <div class="select-box">
+                  <select class="success">
+                    <option value="success" selected>Status: Verified</option>
+                    <option value="warning">Status: Manual Review Needed</option>
+                    <option value="secondary">Status: Running</option>
+                    <option value="reject">Status: Rejected</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="box-shadow">
             <h4 class="name-h4">Document Verification</h4>
@@ -105,6 +119,7 @@
                 </ul>
               </div>
             </div>
+            <i class="fa fa-check-circle success" aria-hidden="true"></i>
           </div>
           <div class="box-shadow">
             <h4 class="name-h4">Face Verification</h4>
@@ -125,10 +140,10 @@
               <div class="col-lg-4 col-sm-6">
                 <h5 class="name-h5">Result</h5>
                 <h2 class="name-h2 text-center">Match Found <span>96%</span></h2>
-                <h2 class="name-h2 text-center success">Face match success! <i class="fa fa-check-circle"
-                    aria-hidden="true"></i></h2>
+                <h2 class="name-h2 text-center success">Face match success! </h2>
               </div>
             </div>
+            <i class="fa fa-check-circle success" aria-hidden="true"></i>
           </div>
           <div class="box-shadow">
             <h4 class="name-h4">Address Verification</h4>
@@ -151,17 +166,11 @@
                 </ul>
               </div>
             </div>
+            <i class="fa fa-check-circle success" aria-hidden="true"></i>
           </div>
         </div>
         <div class="col-lg-3 col-sm-4">
-          <div class="select-box">
-            <select class="success">
-              <option value="success" selected>Status: Verified</option>
-              <option value="warning">Status: Manual Review Needed</option>
-              <option value="secondary">Status: Running</option>
-              <option value="reject">Status: Rejected</option>
-            </select>
-          </div>
+
           <button type="button" class="btn btn-light"><i class="fa fa-upload" aria-hidden="true"></i>Send
             Webhook</button>
           <button type="button" class="btn btn-light"><i class="fa fa-database" aria-hidden="true"></i>Verification
