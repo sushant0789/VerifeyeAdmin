@@ -238,7 +238,7 @@ i.fa-times-circle {
     font-size: 1.6rem;
   }
 
-  i.fa-check-circle.reject,
+  i.fa-check-circle.success,
   i.fa-times-circle.reject {
     font-size: 2rem;
   }
@@ -269,8 +269,8 @@ i.fa-times-circle {
     }
   }
 
-  i.fa-check-circle.reject,
+  i.fa-check-circle.success,
   i.fa-times-circle.reject {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
