@@ -276,6 +276,29 @@ i.fa-times-circle.reject {
   margin: 0;
 }
 
+.fa.success {
+  color: #28a745;
+  font-size: 3rem;
+}
+
+.fa.play {
+  color: #17a2b8;
+  font-size: 3rem;
+}
+
+.video-play-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-play-top i.fa {
+  padding: 0 10px 0 0;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .flex-img {
     height: auto;

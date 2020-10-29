@@ -250,6 +250,22 @@ i.fa-times-circle {
     margin: 0;
   }
 }
+.fa.success {
+  color: #28a745;
+  font-size: 3rem;
+}
+
+.fa.play {
+  color: #17a2b8;
+  font-size: 3rem;
+}
+.video-play-top {
+  display: flex;
+  align-items: center;
+  i.fa {
+    padding: 0 10px 0 0;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .flex-img {
     height: auto;
