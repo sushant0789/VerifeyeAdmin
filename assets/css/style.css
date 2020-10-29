@@ -281,8 +281,11 @@ i.fa-times-circle.reject {
   font-size: 3rem;
 }
 
-.fa.play {
+.play-btn {
   color: #17a2b8;
+}
+
+.play-btn i.fa {
   font-size: 3rem;
 }
 
@@ -297,6 +300,34 @@ i.fa-times-circle.reject {
 
 .video-play-top i.fa {
   padding: 0 10px 0 0;
+}
+
+.btn-tooltip {
+  padding: 0;
+}
+
+.tooltip > .tooltip-inner {
+  -webkit-box-shadow: 0 0px 5.76px 0.24px rgba(36, 36, 36, 0.3);
+          box-shadow: 0 0px 5.76px 0.24px rgba(36, 36, 36, 0.3);
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+.tooltip > .tooltip-inner p {
+  margin: 0 0 0.5rem;
+}
+
+/* .bs-tooltip-auto[x-placement^="left"] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-left-color: #f2f7fb;
+} */
+.questions-list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+
+.questions-list li {
+  padding: 0 0 7px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
