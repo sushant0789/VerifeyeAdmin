@@ -36,3 +36,7 @@ $(".select-box select").change(function () {
   var theText = $(this).val();
   $(this).removeClass().addClass(theText);
 });
+
+$(".controls-list li a").click(function () {
+  $(this).toggleClass("active");
+});

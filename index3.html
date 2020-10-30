@@ -32,10 +32,7 @@
     <![endif]-->
     <div class="main-div">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="verification-id"></h1>
-          </div>
+        <div class="row height-100">
           <div class="col-lg-9 col-sm-8">
             <div class="box-shadow">
               <div class="row">
@@ -58,6 +55,99 @@
                   >
                     <i class="fa fa-info-circle success" aria-hidden="true"></i>
                   </button>
+                </div>
+              </div>
+            </div>
+            <div class="box-shadow">
+              <video width="100%" class="video" controls>
+                <source src="movie.mp4" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-controls">
+                <ul class="controls-list">
+                  <li>
+                    <a class="active">
+                      <i class="fa fa-microphone" aria-hidden="true"></i>
+                      <span class="">Mute</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <i class="fa fa-video-camera" aria-hidden="true"></i>
+                      <span class="">Video</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                      <span class="">Call</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4">
+            <div class="box-shadow right height-60">
+              <h4 class="name-h4 success">
+                <i class="fa fa-list mr-1" aria-hidden="true"></i> Questions
+              </h4>
+              <ol class="questions-list">
+                <li>Please raise your left hand?</li>
+                <li>Please tell your birthplace?</li>
+                <li>Please tell first letter of your last name?</li>
+              </ol>
+            </div>
+            <div class="box-shadow right height-35">
+              <h4 class="name-h4 success">
+                <i class="fa fa-check-square-o mr-1" aria-hidden="true"></i>
+                Confirm Verification
+              </h4>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1"
+                    >Are all questions answered?</label
+                  >
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Is Verified?</label>
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-sm-8">
+            <div class="box-shadow">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h4 class="name-h4">Christopher Lee Gray</h4>
+                  <h6 class="date-h6">
+                    <span class="date">07 Apr, 2020</span>
+                    <span class="time">16:44</span>
+                  </h6>
+                </div>
+                <div class="col-lg-4">
+                  <div class="select-box">
+                    <select class="success">
+                      <option value="success" selected>Status: Verified</option>
+                      <option value="warning">
+                        Status: Manual Review Needed
+                      </option>
+                      <option value="secondary">Status: Running</option>
+                      <option value="reject">Status: Rejected</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,23 +218,301 @@
               </div>
               <i class="fa fa-check-circle success" aria-hidden="true"></i>
             </div>
+            <div class="box-shadow">
+              <h4 class="name-h4">Face Verification</h4>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="name-h5">Reference Face</h5>
+                  <div class="data-img">
+                    <img src="assets/images/passport.png" alt="passport" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="name-h5">Comparison Face</h5>
+                  <div class="data-img flex-img">
+                    <img src="assets/images/face.jpg" alt="passport" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="name-h5">Result</h5>
+                  <h2 class="name-h2 text-center">
+                    Match Found <span>96%</span>
+                  </h2>
+                  <h2 class="name-h2 text-center success">
+                    Face match success!
+                  </h2>
+                </div>
+              </div>
+              <i class="fa fa-check-circle success" aria-hidden="true"></i>
+            </div>
+            <div class="box-shadow">
+              <h4 class="name-h4">Address Verification</h4>
+              <h5 class="name-h5">Document Address Type: Bank Statement</h5>
+              <div class="row">
+                <div class="col-lg-4 col-sm-5">
+                  <div class="data-img">
+                    <a href="#">View PDF</a>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-7">
+                  <ul class="data-ul">
+                    <li>
+                      <span
+                        >Status:
+                        <a href="" class="edit-btn">
+                          <i
+                            class="fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></i></a></span
+                      ><span class="success"> Verified</span>
+                    </li>
+                    <li>
+                      <span
+                        >Address:
+                        <a href="" class="edit-btn">
+                          <i
+                            class="fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></i></a></span
+                      ><span>Riga, Bauskas iela 49A - 2 </span>
+                    </li>
+                    <li>
+                      <span
+                        >City:
+                        <a href="" class="edit-btn">
+                          <i
+                            class="fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></i></a></span
+                      ><span>Riga</span>
+                    </li>
+                    <li>
+                      <span
+                        >Postal code:
+                        <a href="" class="edit-btn">
+                          <i
+                            class="fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></i></a></span
+                      ><span>1004</span>
+                    </li>
+                    <li>
+                      <span
+                        >Country:
+                        <a href="" class="edit-btn">
+                          <i
+                            class="fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></i></a></span
+                      ><span>LV</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <i class="fa fa-check-circle success" aria-hidden="true"></i>
+            </div>
           </div>
           <div class="col-lg-3 col-sm-4">
             <div class="box-shadow right">
-              <h4 class="name-h4 success">
-                <i class="fa fa-list mr-1" aria-hidden="true"></i> Questions
-              </h4>
-              <ol class="questions-list">
-                <li>Please raise your left hand?</li>
-                <li>Please tell your birthplace?</li>
-                <li>Please tell first letter of your last name?</li>
-              </ol>
+              <ul class="verify-list">
+                <li>
+                  <i class="fa fa-check-circle success" aria-hidden="true"></i
+                  >Document Verification
+                </li>
+                <li>
+                  <i class="fa fa-check-circle success" aria-hidden="true"></i
+                  >Face Verification
+                </li>
+                <li>
+                  <i class="fa fa-check-circle success" aria-hidden="true"></i
+                  >Address Verification
+                </li>
+              </ul>
             </div>
             <div class="box-shadow right">
-              <h4 class="name-h4 success">
-                <i class="fa fa-check-square-o mr-1" aria-hidden="true"></i>
-                Confirm Verification
+              <h4 class="name-h4 success">Verified</h4>
+              <p class="lead">
+                When the user finished the verification flow and there were no
+                errors on any of the steps.
+              </p>
+              <h4 class="name-h4 warning">Manual Review Needed</h4>
+              <p class="lead">
+                When the user finished the verification flow and there is an
+                error, for example, Biometric check failed. You should double
+                check the verification results.
+              </p>
+              <h4 class="name-h4 secondary">Running</h4>
+              <p class="lead">
+                When the user has completed the verification and Verifeye is
+                reviewing it.
+              </p>
+              <h4 class="name-h4 reject">Rejected</h4>
+              <p class="lead">
+                Only you as a merchant can edit a verification status and change
+                it to "rejected". Verifeye does not reject users.
+              </p>
+            </div>
+            <div class="box-shadow right">
+              <h4 class="name-h4 primary">
+                <i class="fa fa-file-text-o mr-1" aria-hidden="true"></i> Meta
+                Data
               </h4>
+
+              <div class="bs-example">
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button
+                        type="button"
+                        class="btn btn-link accordion-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                      >
+                        <span> Document fields extraction?</span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        <p>
+                          All the required fields were read from the document.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button
+                        type="button"
+                        class="btn btn-link accordion-link"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                      >
+                        <span> Document fields extraction</span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        <p>
+                          All the required fields were read from the document.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button
+                        type="button"
+                        class="btn btn-link accordion-link"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                      >
+                        <span> Document expiry detection</span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        <p>
+                          All the required fields were read from the document.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button
+                        type="button"
+                        class="btn btn-link accordion-link"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                      >
+                        <span> Document alteration detection</span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        <p>
+                          All the required fields were read from the document.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button
+                        type="button"
+                        class="btn btn-link accordion-link"
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                      >
+                        <span> Document template matching</span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </div>
+                    <div
+                      id="collapseFive"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        <p>
+                          All the required fields were read from the document.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button
+                        type="button"
+                        class="btn btn-link accordion-link"
+                        data-toggle="collapse"
+                        data-target="#collapseSix"
+                      >
+                        <span> Watchlist detection</span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </div>
+                    <div
+                      id="collapseSix"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        <p>
+                          All the required fields were read from the document.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
