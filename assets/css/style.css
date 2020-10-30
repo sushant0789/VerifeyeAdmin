@@ -348,8 +348,8 @@ i.fa-times-circle.reject {
   margin: 0 10px 0 0;
 }
 
-.height-60 {
-  height: 60%;
+.height-50 {
+  max-height: 50%;
   overflow: scroll;
 }
 
@@ -423,6 +423,45 @@ i.fa-times-circle.reject {
 
 .video {
   height: 70vh;
+}
+
+.col-70 {
+  max-width: 70%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+}
+
+.col-30 {
+  max-width: 30%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.refresh-btn {
+  font-size: 1.7rem;
+  background-color: #007bff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 17px;
+  right: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.refresh-btn i {
+  color: #fff;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
