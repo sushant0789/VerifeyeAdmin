@@ -517,6 +517,12 @@ i.fa-times-circle.reject {
   i.fa-times-circle.reject {
     font-size: 2rem;
   }
+  .refresh-btn {
+    height: 28px;
+    width: 28px;
+    right: 48px;
+    font-size: 1.2rem;
+  }
   .col-70 {
     max-width: 65%;
     -webkit-box-flex: 0;
@@ -528,6 +534,12 @@ i.fa-times-circle.reject {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 35%;
             flex: 0 0 35%;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-device-height: 375px) and (max-device-height: 767px) {
+  .height-35 {
+    height: auto;
   }
 }
 
